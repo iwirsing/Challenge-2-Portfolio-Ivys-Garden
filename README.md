@@ -1,4 +1,4 @@
-# portfolio
+# Portfolio: Ivy's Garden
 
 ## User Story
 
@@ -29,5 +29,6 @@ WHEN I resize the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport
 ```
 
-##Sources
+## Sources
 1. Icons: https://codepen.io/nnnnat/pen/DPpMWw
+2. W3 Schools: https://www.w3schools.com/
