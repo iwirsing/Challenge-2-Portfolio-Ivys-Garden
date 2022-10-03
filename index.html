@@ -4,21 +4,151 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ivy's Portfolio</title>
+    <title>Ivy's Garden</title>
     <link rel="stylesheet" href="./assets/css/normalize.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-<body>
+
+<body class="wrapper">
     <header>
+        <h1> Ivy's Garden </h1>
+        <h2> where webpages</h2>
+        <h2 class="subheader2">     are cultivated...</h2>
 
     </header>
-    
-    <main>
+   
+    <section class="row">
+        <!-- NAVIGATION BAR -->
+        <nav class="columnnav">
+            <ul class="no-bullets griddisplay" id="menu">
+                <li >
+                     <img src="./assets/images/gardenhands.png" class="navbackground" alt="garden tools with developer written on top">
+                    <a href="#developer"><h2 class="navlabel">DEVELOPER</h2></a></li> 
+                <li>
+                    <img src="./assets/images/produce.png" class="navbackground" alt="image of produce with portfolio written on top">
+                    <a href="#portfolio"><h2 class="navlabel">PORTFOLIO</h2></a></li>
+                <li>
+                    <img src="./assets/images/shed.png" class="navbackground" alt="shed with contact written on top" >
+                    <a href="#contact"><h2 class="navlabel">CONTACT</h2></a></li>
+                </ul>
 
-    </main>
+        </nav>
+        <!-- BACK TO NAVIGATION -->
+        <object >
+            <a href="#menu" data-descr="MENU" >
+            <img src="../portfolio/assets/images/iconnav.png" class="backtonav"  ></a>
+        </object>
 
+        <!-- CONTENT -->
+        <main class="columnmain griddisplay">
+            <!-- DEVELOPER GARDEN BED -->
+            <figure id="developer">
+                <h3><br><br>The Developer</h3>
+                <span class="displayrow">   
+                    <div><br></div>  
+                    <img src="./assets/images/ivy.png" class="id-picture" style="margin-left: 2rem;">
+                    <article style="margin-left: 3rem;">Hi, I am Ivy.<br> I enjoy being active. <br> I love to garden. <br>And just like the possibilities of the big outdoors,<br> <div  style="font-weight: bold;">I love to code!</div></article>
+                    <div> <br></div> 
+                </span>
+                <article style="margin-left: 3rem; font-family:monospace; text-align: center;"> HTML  &emsp; CSS &emsp;  JAVASCRIPT</article>
+                <h3><br></h3>     <!-- /*take up space*/ -->
+            </figure>
+            <!-- PORTFOLIO GARDEN BED -->
+            <figure id="portfolio">
+                <h3><br><br>My Portfolio</h3>
+                <picture>
+                    <!-- flexbox for portfolio -->
+                           
+                      <!-- First Application Large -->
+                      <dd style="text-align:center; "> <figcaption>Paid Time Off Calculator</figcaption>
+                        <a href="https://www.google.com" target="_blank">
+                        <img src="../portfolio/assets/images/PTO calculator.jpeg" style="width:50vw; max-width:800px; height:500px; margin:20px;">
+                        </a>
+                    </dd>
+                      <!-- The list of the next applications -->
+                      <dd style="text-align:center;">
+                        <figcaption>Plant Identification App</figcaption>
+                        <a href="https://www.google.com" target="_blank">
+                        <img src="../portfolio/assets/images/plant identification app.jpeg" class="appImage" alt="plant identification app">     
+                        </a>
+                    </dd>
+                     
+                    <dd style="text-align:center;">
+                        <figcaption>Workout Planner</figcaption>
+                        <a href="https://www.google.com" target="_blank">
+                        <img src="../portfolio/assets/images/workout planner.png" class="appImage" alt="workout planner">
+                        </a>
+                    </dd>  
+
+                    <dd style="text-align:center;">
+                        <figcaption>Budgeting</figcaption>
+                        <a href="https://www.google.com" target="_blank">
+                        <img src="../portfolio/assets/images/Budget app.jpeg" class="appImage" alt="budgeting application">
+                        </a>
+                    </dd>  
+
+                    <dd style="text-align:center;">
+                        <figcaption>Parent Teacher Organization</figcaption>
+                        <a href="https://www.google.com" target="_blank">
+                        <img src="../portfolio/assets/images/Parent Teacher Organization.jpeg" class="appImage" alt="parent teacher organization">
+                        </a>
+                    </dd>  
+                    
+                    <dd style="text-align:center;">
+                        <figcaption>Almanac Reminder</figcaption>
+                        <a href="https://www.google.com" target="_blank">
+                        <img src="../portfolio/assets/images/almanac reminder.jpeg" class="appImage" alt="almanac reminder">
+                        </a>
+                    </dd>  
+                        
+                    <dd style="text-align:center;">
+                        <figcaption>In Season Produce</figcaption>
+                        <a href="https://www.google.com" target="_blank">
+                        <img src="../portfolio/assets/images/inseasonproduce.jpeg" class="appImage" alt="in season produce">
+                        </a>
+                    </dd>  
+                        
+                    <!-- <article>space holder/article> -->
+                    <h3></h3> 
+                    <!-- /*take up space*/ -->
+                    </picture>
+            </figure>
+
+
+
+            <!-- CONTACT GARDEN BED -->
+            <figure id="contact">
+                <h3><br><br>Contact Me</h3>
+               
+               
+                
+                    <div class="displayrow">
+                    
+                        <icon>         
+                            <a href="https://www.linkedin.com/in/ivywirsing" target="_blank"><div class="linkedin icon"></div></a>
+                               
+                           </a>
+                        </icon>
+                        <icon>         
+                            <a href="https://github.com/iwirsing" target="_blank"><div class="github icon"></div></a>
+                               
+                            </a>
+                       </icon>
+                       
+                        <icon>         
+                            <a href="mailto:ivymolina@gmail.com" target="_blank"><div class="email icon"></div></a>
+                           
+                            </a>
+                        </icon>
+                    </div>
+                    <h3><br></h3> 
+                    <!-- /*take up space*/ -->
+                
+            </figure>
+        </main>
+    </section>
     <footer>
-        
-    </footer>
+        <h4 style="text-align: center; color:black">© Ivy Wirsing 2022</h4>>
+    </h4>
 </body>
 </html>

@@ -1,0 +1,334 @@
+:root{
+  /* color variables */
+  --carmine: #911A1Cff;
+  --dark-slate-gray: #28403Dff;
+  --green: #7B965Cff;
+  --hunter-green: #205D38ff;
+  --opaquebrown2: rgba(120, 40, 31,0);
+  --white:#fff;
+}
+
+
+/* body */
+body{
+    background-color:#c6c1c3;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    position:relative;
+    height: 100vh;
+}
+
+.wrapper{
+  min-height: 25vh;
+  justify-content: space-between;
+  }
+
+
+
+
+header {
+    background-color:var(--green)  ;
+    background-image: url(../images/gardenbed1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center right;
+    clip-path: ellipse(100% 99% at 50% 0);
+    height: 80vh;
+    position: relative;
+    top:0;
+    width:100vw;
+    z-index: -1;
+
+  }
+
+header h1{
+    /* background-color:var(--white); */
+    color:var(--white);
+    display: wrap;
+    flex-direction: row;
+    font-family: cursive;
+    font-size: 15vh;
+    font-weight: 900;
+    left: 10vw;
+    position: relative;
+    text-align: left;
+    text-shadow: -.2rem .25rem 0.2rem var(--dark-slate-gray); 
+    top:-5vh; 
+    width:fit-content;
+    z-index: 3;
+  }
+
+  header h2{
+    background-color:var(--opaquebrown2);
+    color:var(--white);
+    font-family:'Courier New', Courier, monospace;
+    font-size: 2rem;
+    left:55vw;
+    position: relative;
+    text-align:start;
+    text-shadow: -.2rem .25rem 0.2rem var(--dark-slate-gray); 
+    top:-6.5rem;
+    width:fit-content;
+    z-index: 3;
+    
+  }
+
+  /* subheader for title */
+  .subheader2{
+    text-align:left;
+    position: relative;
+    z-index: 3;
+    left:60vw;
+    top:-8rem;
+  }
+
+ 
+
+/* to align main with nav */
+    .row{
+      display:flex;
+      flex-direction: row;
+    }
+
+/* NAVIGATION BAR */
+    nav{
+    
+      width:20vw;
+      position:relative;
+      top:auto;
+      left:auto;
+      align-content: center;
+      }
+    
+  nav ul.no-bullets{
+      list-style-type: none; /* Remove bullets */
+      padding: 10px; 
+      position:relative;
+      top: 0;
+
+      }
+
+  nav ul {
+    position: fixed;
+
+  }
+
+  /* make background picture fit the nav list elements */
+  .navbackground{
+    max-height: 100%;
+    max-width:100%;
+  }
+  
+  /* Navigation labels */
+  .navlabel{
+    color:var(--white); 
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 800px;
+    font-size: 2rem;
+    left: 50%;
+    margin-top: -7rem;
+    position: absolute;
+    text-shadow: -.2rem .25rem 0.2rem var(--dark-slate-gray); /* add shadow to label and third item to blur */
+    text-shadow:/*gives border to text*/
+    0.07em 0 black,
+    0 0.07em black,
+    -0.07em 0 black,
+    0 -0.07em black;
+    transform: translate(-50%, 0);
+    transition: 0.5s; /* adding the transition to make it more attractive */
+    
+    }
+    /* Set size for navigation bar to fit % of screen width */
+
+    .columnnav{
+      flex:30%;
+      min-width:200px;
+      max-width: 250px;
+      padding: 0;
+      display:inline-block;
+     }
+ 
+
+/* Change the color of icon on hover */
+ul li a h2:hover{
+	/* color: var(--hunter-green); */
+  font-size: 2.3rem; 
+  text-shadow: -.2rem .25rem 0.2rem var(--dark-slate-gray);
+
+  background-color: rgba(150, 0, 24, 0.5);
+ 
+}
+
+.backtonav{
+  position:sticky;
+  margin-top:150vh;
+  top:60px;
+  left: 50px; 
+  height: 30px;
+  width:auto;
+}
+object a:hover::after, object a:focus::after{
+  color:var(--dark-slate-gray);
+  content: attr(data-descr);
+  /* position: absolute; */
+  left: 0;
+  z-index: 5;
+  /* top: 400px; */
+  white-space:nowrap;
+}
+
+/* grid display for nav and main */
+.griddisplay{
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 2rem;
+}
+
+
+/* MAIN CONTENT */
+main{
+  flex: 1;
+  /* height: 100vh; */
+}
+
+.columnmain{
+  flex:60%;
+  height: fit-content;
+  margin: 0;
+  padding: 12px;
+ }
+
+ figure{
+  /* brick raised garden bed */
+  border: 1px dashed white;/*draw border*/
+  border-image: url(../images/brick.jpeg) 30 / 2rem round;
+
+  /* garden bed background */
+  background-image: url(../images/soil.jpeg);
+  background-size: 10% 20%;
+  height:fit-content; 
+  vertical-align: middle;
+  
+ }
+/* GARDEN BED LABELS */
+ h3{
+  font-family: cursive;
+  font-size: 3rem;
+  text-align: center;
+  text-shadow: -.2rem .25rem 0.2rem var(--dark-slate-gray);
+ }
+	
+span{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content:center;
+  column-gap:0;
+  margin:2rem;
+}
+
+
+.id-picture{
+  height: 300px;
+  width: auto;
+  border-radius: 50%;
+}
+article{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2rem;
+}
+
+/* Portfolio Garden Bed  */
+/* flex box */
+picture{
+  display: flex;
+  flex-wrap: wrap;
+  font-family: monospace;
+  justify-content: center;
+  padding: 60px;
+  /* white-space:nowrap; */
+  
+}
+
+dd{
+  margin-bottom: 100px;
+}
+picture .appImage{
+  height:350px;
+  margin:20px;
+  width:250px;
+}
+
+main figure picture dd:hover{
+  background-color:  rgba(53, 94, 59, 0.8);
+  text-transform: uppercase;
+  transform: scale(110%);
+}
+
+
+/* contact me icons and links */
+.icon{
+  background-position: center;
+  border-radius: 10px;
+  align-content: center;
+  height: 5em;
+  width: 5em;
+  -webkit-transition: background-color 0.4s ease;
+  -moz-transition: background-color 0.4s ease;
+  -ms-transition: background-color 0.4s ease;
+  -o-transition: background-color 0.4s ease;
+  transition: background-color 0.4s ease;
+}
+
+.linkedin{
+  background-image:url(../images/linkedin.png);
+  background-size:100%; 
+}
+
+.linkedin:hover {
+  background-color:var(--white);
+  transform: scale(150%);
+}
+
+.github{
+  background-image:url(../images/github.png);
+  background-size:100%; 
+}
+
+.github:hover{
+  background-color:black;
+  transform: scale(150%);
+}
+
+.email{
+  background-image: url(../images/iconemail.png);
+  background-size: 100%;
+}
+
+.email:hover{
+  background-color: var(--white);
+  transform: scale(150%);
+}
+
+.displayrow{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+ 
+}
+
+
+footer{
+  position: static;
+  bottom: -10rem;
+   width: 100vw;
+   height: 2rem;
+ 
+ }
+
+ /* resource
+ icon: https://codepen.io/nnnnat/pen/DPpMWw
+  */
+
+  /* media queries */
