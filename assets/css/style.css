@@ -155,7 +155,6 @@ ul li a h2:hover{
 	/* color: var(--hunter-green); */
   font-size: 2.3rem; 
   text-shadow: -.2rem .25rem 0.2rem var(--dark-slate-gray);
-
   background-color: rgba(150, 0, 24, 0.5);
  
 }
@@ -168,13 +167,12 @@ ul li a h2:hover{
   height: 30px;
   width:auto;
 }
+/* display menu as one hovers the nav icon */
 object a:hover::after, object a:focus::after{
   color:var(--dark-slate-gray);
   content: attr(data-descr);
-  /* position: absolute; */
   left: 0;
   z-index: 5;
-  /* top: 400px; */
   white-space:nowrap;
 }
 
