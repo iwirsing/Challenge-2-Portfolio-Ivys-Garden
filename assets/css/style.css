@@ -172,12 +172,8 @@ ul li a h2:hover{
   width:auto;
 }
 /* display menu as one hovers the nav icon */
-object a:hover::after, object a:focus::after{
-  color:var(--dark-slate-gray);
-  content: attr(data-descr);
-  left: 0;
-  z-index: 5;
-  white-space:nowrap;
+object a img:hover, object a img:focus{
+  transform: scale(200%);
 }
 
 /* grid display for nav and main */
