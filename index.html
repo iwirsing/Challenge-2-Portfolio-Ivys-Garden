@@ -9,17 +9,15 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
-<body class="wrapper">
+<body>
     <header>
         <h1> Ivy's Garden </h1>
         <h2> where webpages</h2>
         <h2 class="subheader2">     are cultivated...</h2>
-
     </header>
-
-    
-   
-    <section class="row">
+   <!-- Section wraps the main content into a row -->
+    <section class="row"> 
+        
         <!-- NAVIGATION BAR -->
         <nav class="columnnav">
             <ul class="no-bullets griddisplay" id="menu">
@@ -33,124 +31,98 @@
                     <img src="./assets/images/shed.png" class="navbackground" alt="shed with contact written on top" >
                     <a href="#contact"><h2 class="navlabel">CONTACT</h2></a></li>
                 </ul>
-
         </nav>
-        <!-- BACK TO NAVIGATION -->
+
+        <!-- BACK TO MENU or NAV -->
         <object >
             <a href="#menu" data-descr="MENU" >
-            <img src="./assets/images/menu.png" class="backtonav"  ></a>
+            <img src="./assets/images/menu.png" class="backtonav" alt="back to menu icon"  ></a>
         </object>
 
         <!-- CONTENT -->
         <main class="columnmain griddisplay">
+            
             <!-- DEVELOPER GARDEN BED -->
             <figure id="developer">
-                <h3><br><br>The Developer</h3>
+                <h3>The Developer</h3>
                 <span class="displayrow">   
                     <div><br></div>  
-                    <img src="./assets/images/ivy.png" class="id-picture" style="margin-left: 2rem;">
-                    <article style="margin-left: 3rem;">Hi, I am Ivy.<br> I enjoy being active. <br> I love to garden. <br>And just like the possibilities of the big outdoors,<br> <div  style="font-weight: bold;">I love to code!</div></article>
+                    <img src="./assets/images/ivy.png" class="id-picture" style="margin-left: 2rem;" alt="image of developer outdoors with a background of river rocks">
+                    <article>Hi, I am Ivy.<br> I enjoy being active. <br> I love to garden. <br>And just like the possibilities of the big outdoors,<br> <div  style="font-weight: bold;">I love to code!</div></article>
                     <div> <br></div> 
                 </span>
-                <article style="margin-left: 3rem; font-family:monospace; text-align: center;"> HTML  &emsp; CSS &emsp;  JAVASCRIPT</article>
-                <h3><br></h3>     <!-- /*take up space*/ -->
+                <article style="font-family:monospace; text-align: center;"> HTML  &emsp; CSS &emsp;  JAVASCRIPT</article>  
             </figure>
+
             <!-- PORTFOLIO GARDEN BED -->
             <figure id="portfolio">
-                <h3><br><br>My Portfolio</h3>
+                <h3>My Portfolio</h3>
                 <picture>
                     <!-- flexbox for portfolio -->
                            
-                      <!-- First Application Large -->
-                      <dd style="text-align:center; "> <figcaption>Paid Time Off Calculator</figcaption>
-                        <a href="https://www.google.com" target="_blank">
-                        <img src="./assets/images/PTO calculator.jpeg" style="width:50vw; max-width:800px; height:500px; margin:20px;">
+                    <!-- First Application Large -->
+                    <dd style="text-align:center; "> <figcaption>Horiseon - Marketing Agency</figcaption>
+                        <a href="https://iwirsing.github.io/Module-1-Challenge-Horiseon/" target="_blank" alt="screenshot of Horiseon website">
+                        <img src="./assets/images/horiseon.png" style="width:50vw; max-width:800px; height:500px; margin:20px;">
                         </a>
                     </dd>
-                      <!-- The list of the next applications -->
-                      <dd style="text-align:center;">
-                        <figcaption>Plant Identification App</figcaption>
+                      <!-- The list of the next 4 dummy applications -->
+                    <dd style="text-align:center;">
+                        <figcaption>Plant ID</figcaption>
                         <a href="https://www.google.com" target="_blank">
-                        <img src="./assets/images/plant identification app.jpeg" class="appImage" alt="plant identification app">     
+                        <img src="./assets/images/plant identification app.jpeg" class="appImage" alt="hand holding phone against a background of plants">     
                         </a>
-                    </dd>
-                     
+                    </dd>   
                     <dd style="text-align:center;">
                         <figcaption>Workout Planner</figcaption>
                         <a href="https://www.google.com" target="_blank">
-                        <img src="./assets/images/workout planner.png" class="appImage" alt="workout planner">
+                        <img src="./assets/images/workout planner.png" class="appImage" alt="Image with WORKOUT in the middle">
                         </a>
-                    </dd>  
-
+                    </dd> 
                     <dd style="text-align:center;">
                         <figcaption>Budgeting</figcaption>
                         <a href="https://www.google.com" target="_blank">
-                        <img src="./assets/images/Budget app.jpeg" class="appImage" alt="budgeting application">
+                        <img src="./assets/images/Budget app.jpeg" class="appImage" alt="Calculator and a circle with $ sign">
                         </a>
                     </dd>  
-
                     <dd style="text-align:center;">
-                        <figcaption>Parent Teacher Organization</figcaption>
+                        <figcaption>PTO</figcaption>
                         <a href="https://www.google.com" target="_blank">
-                        <img src="./assets/images/Parent Teacher Organization.jpeg" class="appImage" alt="parent teacher organization">
+                        <img src="./assets/images/Parent Teacher Organization.jpeg" class="appImage" alt="parent teacher organization in a circle with an apple in the middle">
                         </a>
                     </dd>  
-                    
-                    <dd style="text-align:center;">
-                        <figcaption>Almanac Reminder</figcaption>
-                        <a href="https://www.google.com" target="_blank">
-                        <img src="./assets/images/almanac reminder.jpeg" class="appImage" alt="almanac reminder">
-                        </a>
-                    </dd>  
-                        
-                    <dd style="text-align:center;">
-                        <figcaption>In Season Produce</figcaption>
-                        <a href="https://www.google.com" target="_blank">
-                        <img src="./assets/images/inseasonproduce.jpeg" class="appImage" alt="in season produce">
-                        </a>
-                    </dd>  
-                        
-                    <!-- <article>space holder/article> -->
-                    <h3></h3> 
-                    <!-- /*take up space*/ -->
                     </picture>
             </figure>
 
-
-
             <!-- CONTACT GARDEN BED -->
             <figure id="contact">
-                <h3><br><br>Contact Me</h3>
+                <h3>Contact Me</h3>
                
-               
-                
-                    <div class="displayrow">
-                    
+                    <section class="displayrow">
                         <icon>         
-                            <a href="https://www.linkedin.com/in/ivywirsing" target="_blank"><div class="linkedin icon"></div></a>
-                               
-                           </a>
-                        </icon>
-                        <icon>         
-                            <a href="https://github.com/iwirsing" target="_blank"><div class="github icon"></div></a>
-                               
-                            </a>
-                       </icon>
-                       
-                        <icon>         
-                            <a href="mailto:ivymolina@gmail.com" target="_blank"><div class="email icon"></div></a>
-                           
+                            <a href="https://www.linkedin.com/in/ivywirsing" target="_blank" alt="linkedin icon with word in"><div class="linkedin icon"></div></a>
                             </a>
                         </icon>
-                    </div>
-                    <h3><br></h3> 
-                    <!-- /*take up space*/ -->
+                        <icon>         
+                            <a href="https://github.com/iwirsing" target="_blank" alt="github icon with a cat silhouette "><div class="github icon"></div></a>
+                            </a>
+                        </icon>
+                        <icon>          
+                            <a href="mailto:ivymolina@gmail.com" target="_blank" alt="email icon with envelope"><div class="email icon"></div></a>
+                            </a>
+                        </icon>
+                        <!-- phone number holder -->
+                        <h4 >Tel. No.:<br>+1 777-777-7777</h4>
+                        
+                    </section>
+                   
+                    <!-- make space-->
                 
             </figure>
         </main>
     </section>
     <footer>
-        <h4 style="text-align: center; color:black">© Ivy Wirsing 2022</h4>>
-    </h4>
+       © Ivy Wirsing 2022
+   
 </body>
 </html>
