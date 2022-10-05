@@ -33,7 +33,7 @@ THEN I am presented with a responsive layout that adapts to my viewport
 
 ## <u>Code Features</u>
 - Garden themed. The main content is on a brick raised bed.
-- Navigation is sticky on desktop mode so user always have access to the content however when the screen is reduced it is fixed and remains on top.
+- Navigation is sticky on desktop mode so user always have access to the content.
 - A RETURN button helps the user go back to top of page.
 - Content in the garden beds are flex mode while the reduced screen changes direction to column.
 - Nav buttons, app icons and contact icons generate responses when hovered to improve user experience.

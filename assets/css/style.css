@@ -154,6 +154,7 @@ picture{
   flex-wrap: wrap;
   font-family: monospace;
   justify-content: center;
+  margin-bottom: 3rem;
 }
 /* MAIN PORTFOLIO : app container */
 dd{
@@ -252,11 +253,9 @@ footer{
   /* media queries */
 @media screen and (max-width: 768px) {
 
-  button{
-    position:fixed; /*fix button*/
-  }
 
-  span, section, figure,picture{
+
+  span,figure,picture{
     flex-direction:column;
     margin:auto;
   }
