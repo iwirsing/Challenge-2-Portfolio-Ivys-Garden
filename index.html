@@ -13,43 +13,45 @@
     <header>
         <h1> Ivy's Garden </h1>
         <h2> where webpages</h2>
-        <h2 class="subheader2">     are cultivated...</h2>
+        <h2 class="subheader2offset">are cultivated...</h2>
     </header>
-   <!-- Section wraps the main content into a row -->
+   <!-- Section wraps the main content (navigation and main) into a row -->
     <section class="row"> 
         
-        <!-- NAVIGATION BAR -->
-        <nav class="columnnav">
-            <ul class="no-bullets griddisplay" id="menu">
-                <li >
-                     <img src="./assets/images/gardenhands.png" class="navbackground" alt="garden tools with developer written on top">
-                    <a href="#developer"><h2 class="navlabel">DEVELOPER</h2></a></li> 
-                <li>
-                    <img src="./assets/images/produce.png" class="navbackground" alt="image of produce with portfolio written on top">
-                    <a href="#portfolio"><h2 class="navlabel">PORTFOLIO</h2></a></li>
-                <li>
-                    <img src="./assets/images/shed.png" class="navbackground" alt="shed with contact written on top" >
-                    <a href="#contact"><h2 class="navlabel">CONTACT</h2></a></li>
-                </ul>
+        <!-- NAVIGATION COLUMN -->
+        <nav>
+            <a href="#developer" alt="button for developer">
+                <button class="navsize" style="position:sticky; top:100px;border:none;">
+                <h2 class="navlabel">DEVELOPER</h2>
+                </button> 
+            </a>
+            <a href="#portfolio" alt="button for portfolio">
+                <button class="navsize" style="position:sticky; top:200px;border:none;">
+                <h2 class="navlabel">PORTFOLIO</h2>
+                </button>
+            </a>
+            <a href="#contact" alt="button for contact">
+                <button class="navsize" style="position:sticky; top: 300px; border:none;">
+                <h2 class="navlabel">CONTACT</h2>
+                </button>
+            </a>
+            <a href="#top" alt="button for return to top"> 
+                <button class="navsize" style="position:sticky; top: 500px; border:none;">
+                <h2 class="navlabel">RETURN</h2>
+                </button>
+            </a>   
         </nav>
 
-        <!-- BACK TO MENU or NAV -->
-        <object >
-            <a href="#menu" data-descr="MENU" >
-            <img src="./assets/images/menu.png" class="backtonav" alt="back to menu icon"  ></a>
-        </object>
-
         <!-- CONTENT -->
-        <main class="columnmain griddisplay">
+        <main>
             
             <!-- DEVELOPER GARDEN BED -->
             <figure id="developer">
                 <h3>The Developer</h3>
                 <span class="displayrow">   
                     <div><br></div>  
-                    <img src="./assets/images/ivy.png" class="id-picture" style="margin-left: 2rem;" alt="image of developer outdoors with a background of river rocks">
+                    <img src="./assets/images/ivy.png" class="id-picture" alt="image of developer outdoors with a background of river rocks">
                     <article>Hi, I am Ivy.<br> I enjoy being active. <br> I love to garden. <br>And just like the possibilities of the big outdoors,<br> <div  style="font-weight: bold;">I love to code!</div></article>
-                    <div> <br></div> 
                 </span>
                 <article style="font-family:monospace; text-align: center;"> HTML  &emsp; CSS &emsp;  JAVASCRIPT</article>  
             </figure>
@@ -63,32 +65,32 @@
                     <!-- First Application Large -->
                     <dd style="text-align:center; "> <figcaption>Horiseon - Marketing Agency</figcaption>
                         <a href="https://iwirsing.github.io/Module-1-Challenge-Horiseon/" target="_blank" alt="screenshot of Horiseon website">
-                        <img src="./assets/images/horiseon.png" style="width:50vw; max-width:800px; height:500px; margin:20px;">
+                        <img src="./assets/images/horiseon.png" class="whiteborder firstappstyle">
                         </a>
                     </dd>
-                      <!-- The list of the next 4 dummy applications -->
+                      <!-- The list of the next 4 place holder applications -->
                     <dd style="text-align:center;">
                         <figcaption>Plant ID</figcaption>
                         <a href="https://www.google.com" target="_blank">
-                        <img src="./assets/images/plant identification app.jpeg" class="appImage" alt="hand holding phone against a background of plants">     
+                        <img src="./assets/images/plant identification app.jpeg" class="appImage whiteborder" alt="hand holding phone against a background of plants">     
                         </a>
                     </dd>   
                     <dd style="text-align:center;">
                         <figcaption>Workout Planner</figcaption>
                         <a href="https://www.google.com" target="_blank">
-                        <img src="./assets/images/workout planner.png" class="appImage" alt="Image with WORKOUT in the middle">
+                        <img src="./assets/images/workout planner.png" class="appImage whiteborder" alt="Image with WORKOUT in the middle">
                         </a>
                     </dd> 
                     <dd style="text-align:center;">
                         <figcaption>Budgeting</figcaption>
                         <a href="https://www.google.com" target="_blank">
-                        <img src="./assets/images/Budget app.jpeg" class="appImage" alt="Calculator and a circle with $ sign">
+                        <img src="./assets/images/Budget app.jpeg" class="appImage whiteborder" alt="Calculator and a circle with $ sign">
                         </a>
                     </dd>  
                     <dd style="text-align:center;">
                         <figcaption>PTO</figcaption>
                         <a href="https://www.google.com" target="_blank">
-                        <img src="./assets/images/Parent Teacher Organization.jpeg" class="appImage" alt="parent teacher organization in a circle with an apple in the middle">
+                        <img src="./assets/images/Parent Teacher Organization.jpeg" class="appImage whiteborder" alt="parent teacher organization in a circle with an apple in the middle">
                         </a>
                     </dd>  
                     </picture>
@@ -112,7 +114,7 @@
                             </a>
                         </icon>
                         <!-- phone number holder -->
-                        <h4 >Tel. No.:<br>+1 777-777-7777</h4>
+                        <h4 style="margin-left:3rem">Tel. No.:<br>+1 777-777-7777</h4>
                         
                     </section>
                    

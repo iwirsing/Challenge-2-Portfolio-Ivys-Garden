@@ -1,233 +1,153 @@
 :root{
   /* color variables */
-  --carmine: #911A1Cff;
+  --carmine: rgba(204, 0, 0,0.5);;
   --dark-slate-gray: #28403Dff;
   --green: #7B965Cff;
-  --hunter-green: #205D38ff;
-  --opaquebrown2: rgba(120, 40, 31,0);
+  --opaquebrown2: rgba(120, 40, 31,0.5);
   --offwhite::#c6c1c3;
   --white:#fff;
 }
 
-
-/* body */
+/* BODY */
 body{
-    background-color:var(--offwhite);
-    color: var(--white);
-    display: flex;
-    flex-direction: column;
-    position:relative;
-    height: 100vh;
-    background-image: url(../images/grass.jpeg);
+  background-color:var(--offwhite);
+  background-image: url(../images/gardenbed1\ 2.jpeg);
+  color: var(--white); /*main text color*/
+  display: flex;
+  flex-direction: column; 
+  position:relative;
+  height: 100vh;
 }
-
+/* HEADER */
 header {
-    background-color:var(--green)  ;
-    background-image: url(../images/gardenbed1.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center right;
-    clip-path: ellipse(100% 99% at 50% 0);
-    height: 80vh;
-    min-width: 850px;
-    position: relative;
-    top:0;
-    width:100vw;
-    z-index: -1;
-
-  }
-
+  background-color:var(--green)  ;
+  background-image: url(../images/gardenbed1.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center right;
+  clip-path: ellipse(100% 99% at 50% 0);
+  height: 40vh;
+  min-width: 1150px;
+  position: relative;
+  top:0;
+  width:100vw;
+  z-index: -1;
+}
+/* HEADER: title format */
 header h1{
-    /* background-color:var(--white); */
-    color:var(--white);
-    display: wrap;
-    flex-direction: row;
-    font-family: cursive;
-    font-size: 15vh;
-    font-weight: 900;
-    left: 10vw;
-    position: relative;
-    text-align: left;
-    text-shadow: -.2rem .25rem 0.2rem var(--dark-slate-gray); 
-    top:-5vh; 
-    width:fit-content;
-    z-index: 3;
-  }
-
-  header h2{
-    background-color:var(--opaquebrown2);
-    color:var(--white);
-    font-family:'Courier New', Courier, monospace;
-    font-size: 2rem;
-    left:55vw;
-    position: relative;
-    text-align:start;
-    text-shadow: -.2rem .25rem 0.2rem var(--dark-slate-gray); 
-    top:-6.5rem;
-    width:fit-content;
-    z-index: 3;
-    
-  }
-
-  /* subheader for title */
-  .subheader2{
-    text-align:left;
-    position: relative;
-    z-index: 3;
-    left:60vw;
-    top:-8rem;
-  }
-
-/* to align main with nav */
-    .row{
-      display:flex;
-      flex-direction: row;
-    }
+  font-family: cursive;
+  font-size: 15vh;
+  left: 10vw;
+  position: relative;
+  text-shadow: -.2rem .25rem 0.2rem var(--dark-slate-gray); 
+  top:-5vh; 
+}
+/* HEADER: first subheader of title */
+header h2{
+  font-family:'Courier New', Courier, monospace;
+  font-size: 1.5rem;
+  left:55vw;
+  position: relative;
+  text-shadow: -.2rem .25rem 0.2rem var(--dark-slate-gray); 
+  top:-6.5rem;
+}
+/* HEADER: second subheader for title  a little offset*/
+.subheader2offset{
+  z-index: 3;
+  left:60vw;
+  top:-8rem;
+}
+/* NAVIGATION AND MAIN to align main with nav */
+.row{
+  display:flex;
+}
 
 /* NAVIGATION BAR */
-    nav{
-    
-      width:20vw;
-      position:relative;
-      top:auto;
-      left:auto;
-      align-content: center;
-      }
-    
-  nav ul.no-bullets{
-      list-style-type: none; /* Remove bullets */
-      padding: 10px; 
-      position:relative;
-      top: 0;
-
-      }
-
-  nav ul {
-    position: fixed;
-
-  }
-
-  /* make background picture fit the nav list elements */
-  .navbackground{
-    max-height: 100%;
-    max-width:100%;
-  }
-  
-  /* Navigation labels */
-  .navlabel{
-    color:var(--white); 
-    font-family:'Courier New', Courier, monospace;
-    font-weight: 800px;
-    font-size: 2rem;
-    left: 50%;
-    margin-top: -7rem;
-    position: absolute;
-    text-shadow: -.2rem .25rem 0.2rem var(--dark-slate-gray); /* add shadow to label and third item to blur */
-    text-shadow:/*gives border to text*/
-    0.07em 0 black,
-    0 0.07em black,
-    -0.07em 0 black,
-    0 -0.07em black;
-    transform: translate(-50%, 0);
-    transition: 0.5s; /* adding the transition to make it more attractive */
-    
-    }
-    /* Set size for navigation bar to fit % of screen width */
-
-    .columnnav{
-      flex:30%;
-      min-width:200px;
-      max-width: 250px;
-      padding: 0;
-      display:inline-block;
-     }
- 
-
-/* Change the color of icon on hover */
-ul li a h2:hover{
-	/* color: var(--hunter-green); */
+/* NAVIGATION: set nav size */
+.navsize{
+  width:200px;
+  height:100px;
+}
+/* NAVIGATION: labels */
+.navlabel{
+  color:var(--white); 
+  font-family:'Courier New', Courier, monospace;
+  font-size: 2rem;
+  left: 10%;  
+  text-shadow:/*gives border to text*/
+  0.07em 0 black,
+  0 0.07em black,
+  -0.07em 0 black,
+  0 -0.07em black;
+}
+/* NAVIGATION: Change the color of nav icon on hover and focus */
+nav button:hover,nav button:focus{   
   font-size: 2.3rem; 
   text-shadow: -.2rem .25rem 0.2rem var(--dark-slate-gray);
-  background-color: rgba(150, 0, 24, 0.5);
- 
+  background-color: var(--carmine);
+  -webkit-transition: background-color 0.4s ease;
+  -moz-transition: background-color 0.4s ease;
+  -ms-transition: background-color 0.4s ease;
+  -o-transition: background-color 0.4s ease;
+  transition: background-color 0.4s ease;
 }
-
-.backtonav{
-  position:sticky;
-  margin-top:150vh;
-  top:60px;
-  left: 50px; 
-  height: 30px;
-  width:auto;
+button{
+  display:block;
+  background-color:rgba(255,255,255,0.7);
+  writing-mode: none;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 40px;
+  margin-inline-end: 40px;
 }
-/* display menu as one hovers the nav icon */
-object a img:hover, object a img:focus{
-  transform: scale(200%);
-}
-
-/* grid display for nav and main */
-.griddisplay{
-  display: grid;
-  grid-template-columns: 1fr;
-  row-gap: 2rem;
-}
-
-
-/* MAIN CONTENT */
+/* MAIN CONTENT GARDEN BEDS*/
 main{
-  flex: 1;
-  /* height: 100vh; */
+  color:var(--dark-slate-gray); /*garden bed font color*/
 }
 
-.columnmain{
-  flex:60%;
-  height: fit-content;
-  margin: 0;
-  padding: 12px;
- }
-
- figure{
-  /* brick raised garden bed */
+figure{
+  /*MAIN GARDEN BED: brick raised garden bed */
   border: 1px dashed white;/*draw border*/
   border-image: url(../images/brick.jpeg) 30 / 2rem round;
 
-  /* garden bed background */
-  background-image: url(../images/soil.jpeg);
-  background-size: 10% 20%;
-  height:fit-content; 
-  vertical-align: middle;
-  
- }
-/* GARDEN BED LABELS */
- h3{
+  /* MAIN GARDEN BED: garden bed background */
+  background-color:rgba(255,255,255,0.7);
+}
+/* MAIN GARDEN BED: labels*/
+h3{
   font-family: cursive;
   font-size: 3rem;
   text-align: center;
-  text-shadow: -.2rem .25rem 0.2rem var(--dark-slate-gray);
- }
-	/* Developer Garden Bed */
+  text-shadow: -.2rem .25rem 0.2rem white;
+}
+	/* MAIN DEVELOPER*/
 span{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-content:center;
-  column-gap:0;
   margin:2rem;
 }
-
+/* FLEX used in icon as well*/
+.displayrow{
+  display:flex;
+  justify-content: space-evenly;
+  margin-bottom: 3.5rem;
+}
+/* MAIN DEVELOPER: picture */
 .id-picture{
-  height: 300px;
-  width: auto;
+  max-height: 400px;
   border-radius: 50%;
+  border: 5px solid var(--white);
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 
 article{
   font-family: 'Courier New', Courier, monospace;
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-left: 3rem;
+  margin-right:3rem;
   margin-bottom: 2rem;
 }
 
-/* Portfolio Garden Bed  */
+/* MAIN PORTFOLIO  */
 /* flex box */
 picture{
   display: flex;
@@ -235,15 +155,28 @@ picture{
   font-family: monospace;
   justify-content: center;
 }
-/* contains the app */
+/* MAIN PORTFOLIO : app container */
 dd{
   margin-bottom: 50px;
+  margin-right: 50px;
+  margin-left: 50px;
 }
+
 figcaption{
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: bolder;
 }
-/* controls the size of the app images */
+/* MAIN PORTFOLIO: app image border */
+.whiteborder{
+  border: 5px solid var(--white);
+}
+
+.firstappstyle{
+  min-width: 300px; 
+  height:500px; 
+  margin:10px;
+}
+/* MAIN PORTFOLIO: controls the size of the app images */
 picture .appImage{
   height:350px;
   margin:10px;
@@ -252,17 +185,24 @@ picture .appImage{
 
 main figure picture dd:hover{
   background-color:  rgba(53, 94, 59, 0.8);
-  text-transform: uppercase;
+  color:var(--white);
+  text-transform: uppercase; /*transform to uppercase to better visibility*/
   transform: scale(110%);
+    -webkit-transition: background-color 0.4s ease;
+  -moz-transition: background-color 0.4s ease;
+  -ms-transition: background-color 0.4s ease;
+  -o-transition: background-color 0.4s ease;
+  transition: background-color 0.4s ease;
 }
 
-/* Contact Garden Bed */
+/* MAIN CONTACT */
 /* contact me icons and links */
 .icon{
   align-content: center;
   background-position: center;
   border-radius: 10px;
   height: 5em;
+  margin-left: 3rem;
   width: 5em;
   -webkit-transition: background-color 0.4s ease;
   -moz-transition: background-color 0.4s ease;
@@ -301,15 +241,9 @@ main figure picture dd:hover{
   transform: scale(150%);
 }
 
-.displayrow{
-  display:flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin-bottom: 3.5rem;
-}
-
+/* FOOTER */
 footer{
-  color:black;
+
   height: 3rem;
   position: static;
   text-align: center; 
@@ -321,3 +255,13 @@ footer{
   */
 
   /* media queries */
+  @media screen and (max-width: 768px) {
+
+  button{
+    position:fixed; /*fix button*/
+  }
+    span, section, figure,picture{
+      flex-direction:column;
+      margin:auto;
+    }
+}
