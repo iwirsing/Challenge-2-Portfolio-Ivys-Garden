@@ -1,8 +1,8 @@
 # Portfolio: Ivy's Garden
-## Deployed Page
- https://iwirsing.github.io/Challenge-2-Portfolio-Ivys-Garden/
+## <u>Deployed Page</u>
+### [Ivy's Garden](https://iwirsing.github.io/Module-2-Challenge-Portfolio-Ivys-Garden/)
  
-## User Story
+## <u>User Story</u>
 
 ```
 AS AN employer
@@ -11,7 +11,7 @@ SO THAT I can review samples of their work and assess whether they're a good can
 ```
 
 
-## Acceptance Criteria
+## <u>Acceptance Criteria</u>
 
 Here are the critical requirements necessary to develop a portfolio that satisfies a typical hiring manager’s needs:
 
@@ -31,6 +31,17 @@ WHEN I resize the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport
 ```
 
-## Sources
+## <u>Code Features</u>
+- Garden themed. The main content is on a brick raised bed.
+- Navigation is sticky on desktop mode so user always have access to the content however when the screen is reduced it is fixed and remains on top.
+- A RETURN button helps the user go back to top of page.
+- Content in the garden beds are flex mode while the reduced screen changes direction to column.
+- Nav buttons, app icons and contact icons generate responses when hovered to improve user experience.
+- Alt comments in many elements.
+
+## <u>Screenshot Desktop Mode</u>
+--to be added--
+
+## <u>Sources</u>
 1. Icons: https://codepen.io/nnnnat/pen/DPpMWw
 2. W3 Schools: https://www.w3schools.com/
