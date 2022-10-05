@@ -164,7 +164,6 @@ dd{
 
 figcaption{
   font-size: 1.5rem;
-  font-weight: bolder;
 }
 /* MAIN PORTFOLIO: app image border */
 .whiteborder{
@@ -182,10 +181,11 @@ picture .appImage{
   margin:10px;
   width:250px;
 }
-
+/* MAIN PORTFOLIO: hover response */
 main figure picture dd:hover{
   background-color:  rgba(53, 94, 59, 0.8);
   color:var(--white);
+  font-weight: bolder;
   text-transform: uppercase; /*transform to uppercase to better visibility*/
   transform: scale(110%);
     -webkit-transition: background-color 0.4s ease;
@@ -203,6 +203,7 @@ main figure picture dd:hover{
   border-radius: 10px;
   height: 5em;
   margin-left: 3rem;
+  margin-bottom: 3rem ;
   width: 5em;
   -webkit-transition: background-color 0.4s ease;
   -moz-transition: background-color 0.4s ease;
@@ -215,15 +216,19 @@ main figure picture dd:hover{
   background-image:url(../images/linkedin.png);
   background-size:100%; 
 }
-
-.linkedin:hover {
-  background-color:var(--white);
-  transform: scale(150%);
-}
-
 .github{
   background-image:url(../images/github.png);
   background-size:100%; 
+}
+
+.email{
+  background-image: url(../images/iconemail.png);
+  background-size: 100%;
+}
+/* MAIN CONTACT: hover features */
+.linkedin:hover, .email:hover, h4:hover {
+  background-color:var(--white);
+  transform: scale(150%);
 }
 
 .github:hover{
@@ -231,15 +236,9 @@ main figure picture dd:hover{
   transform: scale(150%);
 }
 
-.email{
-  background-image: url(../images/iconemail.png);
-  background-size: 100%;
-}
 
-.email:hover{
-  background-color: var(--white);
-  transform: scale(150%);
-}
+
+
 
 /* FOOTER */
 footer{
@@ -251,13 +250,14 @@ footer{
  }
 
   /* media queries */
-  @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
 
   button{
     position:fixed; /*fix button*/
   }
-    span, section, figure,picture{
-      flex-direction:column;
-      margin:auto;
-    }
+
+  span, section, figure,picture{
+    flex-direction:column;
+    margin:auto;
+  }
 }
