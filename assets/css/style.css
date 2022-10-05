@@ -80,8 +80,8 @@ header h2{
   -0.07em 0 black,
   0 -0.07em black;
 }
-/* NAVIGATION: Change the color of nav icon on hover and focus */
-nav button:hover,nav button:focus{   
+/* NAVIGATION: Change the color of nav icon on hover */
+nav button:hover{   
   font-size: 2.3rem; 
   text-shadow: -.2rem .25rem 0.2rem var(--dark-slate-gray);
   background-color: var(--carmine);
