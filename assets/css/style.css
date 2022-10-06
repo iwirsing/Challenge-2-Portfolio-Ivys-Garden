@@ -16,7 +16,6 @@ body{
   color: var(--white); /*main text color*/
   display: flex;
   flex-direction: column; 
-  /* position:relative; */
   height: 100vh;
   width:100vw;
   margin: 0;
@@ -31,7 +30,6 @@ header {
   background-repeat: no-repeat;
   clip-path: ellipse(100% 99% at 50% 0);
   height: 40vh;
-  /* min-width: 1150px; */
   top:0;
   width:100vw;
   z-index: -1;
@@ -41,7 +39,6 @@ header {
   font-family: cursive;
   font-size: 2rem;
   height:fit-content;
-
   margin:auto;
   position: relative;
   text-shadow: -.2rem .25rem 0.2rem var(--dark-slate-gray); 
@@ -77,7 +74,7 @@ header {
 .navlabel{
   color:var(--white); 
   font-family:'Courier New', Courier, monospace;
-  font-size: 2rem;
+  font-size: 1.5rem;
   left: 10%;  
   text-shadow:/*gives border to text*/
   0.07em 0 black,
@@ -104,15 +101,14 @@ button{
 }
 /* NAVIGATION: Change the color of nav icon on hover */
 nav button:hover{   
-  font-size: 2.3rem; 
-  text-shadow: -.2rem .25rem 0.2rem var(--dark-slate-gray);
   background-color: var(--carmine);
+  text-shadow: -.2rem .25rem 0.2rem var(--dark-slate-gray);
+  transform: scale(1.15);
   transition: background-color 0.4s ease;
   -webkit-transition: background-color 0.4s ease;
   -moz-transition: background-color 0.4s ease;
   -ms-transition: background-color 0.4s ease;
   -o-transition: background-color 0.4s ease;
-
 }
 
 /* MAIN CONTENT GARDEN BEDS*/
@@ -183,7 +179,7 @@ dd{
 }
 
 figcaption{
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 /* MAIN PORTFOLIO: app image border */
 .whiteborder{
@@ -220,8 +216,6 @@ main figure picture dd:hover{
   align-content: center;
   border-radius: 10px;
   height: 5em;
-  margin-left: 3rem;
-  margin-bottom: 3rem ;
   width: 5em;
   -webkit-transition: background-color 0.4s ease;
   -moz-transition: background-color 0.4s ease;
@@ -245,13 +239,14 @@ main figure picture dd:hover{
   background-size: 100%;
 }
 /* MAIN CONTACT: hover features */
-.linkedin:hover, .email:hover, h4:hover {
+.linkedin:hover, .email:hover{
   background-color:var(--white);
   transform: scale(125%);
 }
 
-.github:hover{
+.github:hover, h4:hover {
   background-color:black;
+  color:var(--white);
   transform: scale(125%);
 }
 
