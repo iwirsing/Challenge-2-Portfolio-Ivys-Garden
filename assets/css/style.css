@@ -9,6 +9,7 @@
 
 /* BODY */
 body{
+  
   background-color:var(--offwhite);
   background-image: url("../images/gardenbed1\ 2.jpeg");
   background-size: cover;
@@ -30,38 +31,37 @@ header {
   background-repeat: no-repeat;
   clip-path: ellipse(100% 99% at 50% 0);
   height: 40vh;
-  min-width: 1150px;
+  /* min-width: 1150px; */
   top:0;
   width:100vw;
   z-index: -1;
 }
 /* HEADER: title format */
-header h1{
+.title{
   font-family: cursive;
-  font-size: 15vh;
-  left: 10vw;
+  font-size: 2rem;
+  height:fit-content;
+
+  margin:auto;
   position: relative;
   text-shadow: -.2rem .25rem 0.2rem var(--dark-slate-gray); 
   top:-5vh; 
+  width:fit-content;
 }
 /* HEADER: first subheader of title */
-header h2{
+.header2{
   font-family:'Courier New', Courier, monospace;
-  font-size: 1.5rem;
-  left:55vw;
-  padding-right:-300px;
-  position: relative;
+  font-size: 1rem;
+  left:15vw;
+  margin:auto;
+  position:relative;
   overflow-x: hidden;
   text-shadow: -.2rem .25rem 0.2rem var(--dark-slate-gray); 
-  top:-6.5rem;
+  top:-5rem;
+  width:40vw;
   z-index:7;
 }
-/* HEADER: second subheader for title  a little offset*/
-.subheader2offset{
-  left:60vw;
-  top:-8rem;
-  z-index: 3;
-}
+
 /* NAVIGATION AND MAIN to align main with nav */
 .row{
   display:flex;
@@ -118,6 +118,7 @@ nav button:hover{
 /* MAIN CONTENT GARDEN BEDS*/
 main{
   color:var(--dark-slate-gray); /*garden bed font color*/
+  
 }
 
 figure{
@@ -131,35 +132,36 @@ figure{
 /* MAIN GARDEN BED: labels*/
 h3{
   font-family: cursive;
-  font-size: 3rem;
+  font-size: 2rem;
+  margin-top:2rem;
   text-align: center;
   text-shadow: -.2rem .25rem 0.2rem white;
 }
 	/* MAIN DEVELOPER*/
-span{
-  margin:2rem;
-}
+
 /* FLEX used in icon as well*/
 .displayrow{
   display:flex;
   justify-content: space-evenly;
   margin-bottom: 3.5rem;
+ 
   width: 60vw;
 }
 /* MAIN DEVELOPER: picture */
 .id-picture{
-  /* max-height: 400px; */
-  width:30vw;
+  
+  width:10rem;
   border-radius: 50%;
   border: 5px solid var(--white);
-  margin-left: 5rem;
-  margin-right: 3rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 article{
   font-family: 'Courier New', Courier, monospace;
-  font-size: 1.5rem;
-  margin-left: 1rem;
+  font-size: 1.25rem;
+  margin:auto;
+  /* margin-left: 1rem; */
   margin-bottom: 2rem;
   width:100%;
 }
