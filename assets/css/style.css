@@ -137,10 +137,11 @@ h3{
 
 /* FLEX used in icon as well*/
 .displayrow{
+  column-gap: 1.25rem;
   display:flex;
-  justify-content: space-evenly;
-  margin-bottom: 3.5rem;
- 
+  justify-content:center;
+  margin:auto;
+  margin-bottom: 3.5rem; 
   width: 60vw;
 }
 /* MAIN DEVELOPER: picture */
@@ -156,8 +157,7 @@ article{
   font-family: 'Courier New', Courier, monospace;
   font-size: 1.25rem;
   margin:auto;
-  /* margin-left: 1rem; */
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   width:100%;
 }
 
