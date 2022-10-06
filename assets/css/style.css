@@ -3,7 +3,6 @@
   --carmine: rgba(204, 0, 0,0.5);;
   --dark-slate-gray: #28403Dff;
   --green: #7B965Cff;
-  --opaquebrown2: rgba(120, 40, 31,0.5);
   --offwhite::#c6c1c3;
   --white:#fff;
 }
@@ -11,24 +10,27 @@
 /* BODY */
 body{
   background-color:var(--offwhite);
-  background-image: url(../images/gardenbed1\ 2.jpeg);
+  background-image: url("../images/gardenbed1\ 2.jpeg");
+  background-size: cover;
   color: var(--white); /*main text color*/
   display: flex;
   flex-direction: column; 
-  position:relative;
+  /* position:relative; */
   height: 100vh;
+  width:100vw;
+  margin: 0;
+  padding: 0;
+  overflow-x:hidden;
 }
 /* HEADER */
 header {
   background-color:var(--green)  ;
-  background-image: url(../images/gardenbed1.jpeg);
+  background-image: url("../images/gardenbed1.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center right;
   clip-path: ellipse(100% 99% at 50% 0);
   height: 40vh;
   min-width: 1150px;
-  position: relative;
   top:0;
   width:100vw;
   z-index: -1;
@@ -47,15 +49,18 @@ header h2{
   font-family:'Courier New', Courier, monospace;
   font-size: 1.5rem;
   left:55vw;
+  padding-right:-300px;
   position: relative;
+  overflow-x: hidden;
   text-shadow: -.2rem .25rem 0.2rem var(--dark-slate-gray); 
   top:-6.5rem;
+  z-index:7;
 }
 /* HEADER: second subheader for title  a little offset*/
 .subheader2offset{
-  z-index: 3;
   left:60vw;
   top:-8rem;
+  z-index: 3;
 }
 /* NAVIGATION AND MAIN to align main with nav */
 .row{
@@ -65,8 +70,8 @@ header h2{
 /* NAVIGATION BAR */
 /* NAVIGATION: set nav size */
 .navsize{
-  width:200px;
   height:100px;
+  width:200px;
 }
 /* NAVIGATION: labels */
 .navlabel{
@@ -80,26 +85,36 @@ header h2{
   -0.07em 0 black,
   0 -0.07em black;
 }
+/* NAVIVATION: hyperlink */
+a { 
+  /* removes the underline */
+  text-decoration: none;
+  
+}
+/* NAVIVATION: button */
+button{
+  display:block;
+  background-color:rgba(255,255,255,0.7);
+  cursor:pointer;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 40px;
+  margin-inline-end: 40px;
+  
+}
 /* NAVIGATION: Change the color of nav icon on hover */
 nav button:hover{   
   font-size: 2.3rem; 
   text-shadow: -.2rem .25rem 0.2rem var(--dark-slate-gray);
   background-color: var(--carmine);
+  transition: background-color 0.4s ease;
   -webkit-transition: background-color 0.4s ease;
   -moz-transition: background-color 0.4s ease;
   -ms-transition: background-color 0.4s ease;
   -o-transition: background-color 0.4s ease;
-  transition: background-color 0.4s ease;
+
 }
-button{
-  display:block;
-  background-color:rgba(255,255,255,0.7);
-  writing-mode: none;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 40px;
-  margin-inline-end: 40px;
-}
+
 /* MAIN CONTENT GARDEN BEDS*/
 main{
   color:var(--dark-slate-gray); /*garden bed font color*/
@@ -129,22 +144,24 @@ span{
   display:flex;
   justify-content: space-evenly;
   margin-bottom: 3.5rem;
+  width: 60vw;
 }
 /* MAIN DEVELOPER: picture */
 .id-picture{
-  max-height: 400px;
+  /* max-height: 400px; */
+  width:30vw;
   border-radius: 50%;
   border: 5px solid var(--white);
-  margin-left: 3rem;
+  margin-left: 5rem;
   margin-right: 3rem;
 }
 
 article{
   font-family: 'Courier New', Courier, monospace;
   font-size: 1.5rem;
-  margin-left: 3rem;
-  margin-right:3rem;
+  margin-left: 1rem;
   margin-bottom: 2rem;
+  width:100%;
 }
 
 /* MAIN PORTFOLIO  */
@@ -172,15 +189,14 @@ figcaption{
 }
 
 .firstappstyle{
-  min-width: 300px; 
-  height:500px; 
-  margin:10px;
+  height:auto;
+  width:80%;
+
 }
 /* MAIN PORTFOLIO: controls the size of the app images */
 picture .appImage{
-  height:350px;
-  margin:10px;
-  width:250px;
+height:300px;
+width:200px;
 }
 /* MAIN PORTFOLIO: hover response */
 main figure picture dd:hover{
@@ -189,7 +205,7 @@ main figure picture dd:hover{
   font-weight: bolder;
   text-transform: uppercase; /*transform to uppercase to better visibility*/
   transform: scale(110%);
-    -webkit-transition: background-color 0.4s ease;
+  -webkit-transition: background-color 0.4s ease;
   -moz-transition: background-color 0.4s ease;
   -ms-transition: background-color 0.4s ease;
   -o-transition: background-color 0.4s ease;
@@ -200,7 +216,6 @@ main figure picture dd:hover{
 /* contact me icons and links */
 .icon{
   align-content: center;
-  background-position: center;
   border-radius: 10px;
   height: 5em;
   margin-left: 3rem;
@@ -217,6 +232,7 @@ main figure picture dd:hover{
   background-image:url(../images/linkedin.png);
   background-size:100%; 
 }
+
 .github{
   background-image:url(../images/github.png);
   background-size:100%; 
@@ -229,21 +245,16 @@ main figure picture dd:hover{
 /* MAIN CONTACT: hover features */
 .linkedin:hover, .email:hover, h4:hover {
   background-color:var(--white);
-  transform: scale(150%);
+  transform: scale(125%);
 }
 
 .github:hover{
   background-color:black;
-  transform: scale(150%);
+  transform: scale(125%);
 }
-
-
-
-
 
 /* FOOTER */
 footer{
-
   height: 3rem;
   position: static;
   text-align: center; 
@@ -252,11 +263,24 @@ footer{
 
   /* media queries */
 @media screen and (max-width: 768px) {
-
-
-
-  span,figure,picture{
+  h1,h2{
+    padding-right:-200px;
+    margin-right:0px;
+  }
+  
+  span,figure,main,div, section {
+    align-items: center;
     flex-direction:column;
     margin:auto;
+    position:static;
+    width:100vw;
+  }
+ 
+  nav, button{ 
+    position:static !important; /*stops the sticky menu*/
+  }
+  icon,h4 {
+    margin: auto;
+    text-align: center; 
   }
 }
