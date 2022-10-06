@@ -1,4 +1,14 @@
 # Portfolio: Ivy's Garden
+## <u>Table of Contents</u>
+1. [Link to Deployed Page](#udeployed-pageu)
+2. [User Story](#uuser-storyu)
+3. [Acceptance Criteria](#uacceptance-criteriau)
+4. [Code Features](#ucode-featuresu)
+5. [Screenshot Desktop Mode](#uscreenshot-desktop-modeu)
+6. [Screenshot 768px or Less Mode](#uscreenshot-768px-or-less-modeu)
+7. [Sources](#usourcesu)
+
+
 ## <u>Deployed Page</u>
 ### [Ivy's Garden](https://iwirsing.github.io/Module-2-Challenge-Portfolio-Ivys-Garden/)
  
@@ -40,8 +50,10 @@ THEN I am presented with a responsive layout that adapts to my viewport
 - Alt comments in many elements.
 
 ## <u>Screenshot Desktop Mode</u>
---to be added--
+![Screen Shot Desktop](./assets/images/IvysGardenDesktop.png)
 
+## <u>Screenshot 768px or Less Mode</u>
+![Screen Shot Smaller Screen](./assets/images/Ivy'sGarden768pxorless.png)
 ## <u>Sources</u>
 1. Icons: https://codepen.io/nnnnat/pen/DPpMWw
 2. W3 Schools: https://www.w3schools.com/
