@@ -1,5 +1,5 @@
 # Portfolio: Ivy's Garden
-    A garden themed portfolio webpage.
+A garden themed portfolio webpage.
 
 ## <u>Table of Contents</u>
 1. [Link to Deployed Page](#udeployed-pageu)
