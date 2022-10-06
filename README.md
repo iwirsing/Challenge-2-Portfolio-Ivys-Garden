@@ -8,7 +8,6 @@
 6. [Screenshot 768px or Less Mode](#uscreenshot-768px-or-less-modeu)
 7. [Sources](#usourcesu)
 
-
 ## <u>Deployed Page</u>
 ### [Ivy's Garden](https://iwirsing.github.io/Module-2-Challenge-Portfolio-Ivys-Garden/)
  
@@ -42,18 +41,20 @@ THEN I am presented with a responsive layout that adapts to my viewport
 ```
 
 ## <u>Code Features</u>
-- Garden themed. The main content is on a brick raised bed.
+- Garden themed. The main content (developer, portfolio, contact) is on brick raised beds.
 - Navigation is sticky on desktop mode so user always have access to the content.
-- A RETURN button helps the user go back to top of page.
-- Content in the garden beds are flex mode while the reduced screen changes direction to column.
+- Navigation becomes static in 768px or less mode.
+- A RETURN button is added to help the user go back to the top of page, only really effective in desktop mode. Can be improved.
+- Content in the garden beds are flex mode (row) while the reduced screen changes flex-direction to column.
 - Nav buttons, app icons and contact icons generate responses when hovered to improve user experience.
-- Alt comments in many elements.
+- Alt comments and in many elements.
 
 ## <u>Screenshot Desktop Mode</u>
 ![Screen Shot Desktop](./assets/images/IvysGardenDesktop.png)
 
 ## <u>Screenshot 768px or Less Mode</u>
 ![Screen Shot Smaller Screen](./assets/images/Ivy'sGarden768pxorless.png)
+
 ## <u>Sources</u>
 1. Icons: https://codepen.io/nnnnat/pen/DPpMWw
 2. W3 Schools: https://www.w3schools.com/
