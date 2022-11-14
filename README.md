@@ -52,10 +52,10 @@ THEN I am presented with a responsive layout that adapts to my viewport
 - Alt comments and in many elements.
 
 ## <u>Screenshot Desktop Mode</u>
-![Screen Shot Desktop](./assets/images/IvysGardenDesktop.png)
+![Screen Shot Desktop](./assets/images/my%20portfolio.png)
 
 ## <u>Screenshot 768px or Less Mode</u>
-![Screen Shot Smaller Screen](./assets/images/Ivy'sGarden768pxorless.png)
+![Screen Shot Smaller Screen](./assets/images/my%20portfolio%20-%20768px%20or%20less.png)
 
 ## <u>Sources</u>
 1. Icons: https://codepen.io/nnnnat/pen/DPpMWw
